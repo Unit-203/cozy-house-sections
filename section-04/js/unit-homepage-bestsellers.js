@@ -1,17 +1,17 @@
-var slider = document.getElementById('slider'),
-    sliderItems = document.getElementById('slides'),
-    prev = document.getElementById('prev'),
-    next = document.getElementById('next');
+var s4slider = document.getElementById('s4slider'),
+    s4sliderItems = document.getElementById('s4slides'),
+    s4prev = document.getElementById('s4prev'),
+    s4next = document.getElementById('s4next');
 
-function slide(wrapper, items, prev, next) {
+function s4slide(wrapper, items, prev, next) {
     var posX1 = 0,
         posX2 = 0,
         posInitial,
         posFinal,
         threshold = 100,
-        slides = items.getElementsByClassName('slide'),
+        slides = items.getElementsByClassName('s4slide'),
         slidesLength = slides.length,
-        slideSize = items.getElementsByClassName('slide')[0].offsetWidth,
+        slideSize = items.getElementsByClassName('s4slide')[0].offsetWidth,
         firstSlide = slides[0],
         lastSlide = slides[slidesLength - 1],
         cloneFirst = firstSlide.cloneNode(true),
@@ -115,4 +115,4 @@ function slide(wrapper, items, prev, next) {
     }
 }
 
-slide(slider, sliderItems, prev, next);
+s4slide(s4slider, s4sliderItems, s4prev, s4next);

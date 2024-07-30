@@ -1,23 +1,23 @@
-let slideIndex = 1;
+let s9slideIndex = 1;
 
 // Next/previous controls
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+function s9plusSlides(n) {
+    s9showSlides(s9slideIndex += n);
 }
 
 // Thumbnail image controls
-function currentSlide(n) {
-    showSlides(slideIndex = n);
+function s9currentSlide(n) {
+    s9showSlides(s9slideIndex = n);
 }
 
-function showSlides(n) {
+function s9showSlides(n) {
     let i;
-    let section = document.getElementById("section");
-    let container = document.getElementById("wrapper");
-    let slides = document.getElementsByClassName("slide");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
+    let section = document.getElementById("s9section");
+    let container = document.getElementById("s9wrapper");
+    let slides = document.getElementsByClassName("s9slide");
+    let dots = document.getElementsByClassName("s9dot");
+    if (n > slides.length) { s9slideIndex = 1 }
+    if (n < 1) { s9slideIndex = slides.length }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.opacity = "0.9";
     }
@@ -26,14 +26,14 @@ function showSlides(n) {
     }
     const containerWidth = container.clientWidth;
     const sectionWidth = section.clientWidth;
-    const slideWidth = slides[slideIndex - 1].clientWidth;
-    let marginLeft = -(slideIndex - 1) * slideWidth;
+    const slideWidth = slides[s9slideIndex - 1].clientWidth;
+    let marginLeft = -(s9slideIndex - 1) * slideWidth;
     if (sectionWidth > containerWidth + marginLeft) {
         marginLeft = -(containerWidth - sectionWidth);
     }
     container.style.marginLeft = `${marginLeft}px`;
-    slides[slideIndex - 1].style.opacity = "1";
-    dots[slideIndex - 1].className += " active";
+    slides[s9slideIndex - 1].style.opacity = "1";
+    dots[s9slideIndex - 1].className += " active";
 }
 
-showSlides(slideIndex);
+s9showSlides(s9slideIndex);
