@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fustat&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.unit-homepage-shopbymaterial__section {
+  display: block;
+  width: 1440px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 1);
+  position: relative;
+  padding: 0;
+}
+
+@media only screen and (max-width: 1440px) {
+  .unit-homepage-shopbymaterial__section {
+    width: 100%;
+  }
+}
+
+.unit-homepage-shopbymaterial__panel {
+  float: left;
+  display: block;
+  position: relative;
+  width: 40%;
+  padding: 80px 50px;
+}
+
+.unit-homepage-shopbymaterial__panel-title {
+  float: left;
+  display: block;
+  position: relative;
+  width: 100%;
+  color: rgba(5, 43, 102, 1);
+  font-family: Noto Serif;
+  font-weight: Regular;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: left;
+}
+
+.unit-homepage-shopbymaterial__panel-info {
+  float: left;
+  display: block;
+  position: relative;
+  width: 100%;
+  color: rgba(55, 77, 113, 1);
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 18px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.unit-homepage-shopbymaterial__showcase {
+  float: right;
+  display: block;
+  position: relative;
+  width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+  .unit-homepage-shopbymaterial__panel {
+    width: 100%;
+    margin: 0;
+  }
+
+  .unit-homepage-shopbymaterial__showcase {
+    width: 100%;
+    margin: 0;
+  }
+
+  .unit-homepage-shopbymaterial__panel-title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  
+  .unit-homepage-shopbymaterial__panel-info {
+    font-size: 14px;
+  }
+}
+
+.unit-homepage-shopbymaterial__everyday {
+  float: left;
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: rgba(255, 243, 210, 1);
+}
+
+.unit-homepage-shopbymaterial__everyday-picture {
+  float: left;
+  display: block;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  background: url("../images/v118_89.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 0;
+}
+
+.unit-homepage-shopbymaterial__everyday-panel {
+  float: right;
+  display: block;
+  position: relative;
+  width: 50%;
+  margin: 0;
+  padding: 40px;
+}
+
+.unit-homepage-shopbymaterial__everyday-icon {
+  float: left;
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: url("../images/everyday-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.unit-homepage-shopbymaterial__everyday-title {
+  float: left;
+  display: block;
+  position: relative;
+  width: 100%;
+  color: rgba(55, 77, 113, 1);
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 18px;
+  text-align: left;
+  margin-top: 5px;
+}
+
+.unit-homepage-shopbymaterial__everyday-info {
+  float: left;
+  display: block;
+  position: relative;
+  width: 100%;
+  color: rgba(55, 77, 113, 1);
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 16px;
+  text-align: left;
+  margin-top: 5px;
+}
+
+.unit-homepage-shopbymaterial__everyday-action {
+  float: left;
+  display: block;
+  position: relative;
+  width: 100%;
+  color: rgba(55, 77, 113, 1);
+  font-family: Fustat;
+  font-weight: Bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.unit-homepage-shopbymaterial__luxury {
+  float: left;
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: rgba(196, 229, 255, 1);
+}
+
+.unit-homepage-shopbymaterial__luxury-picture {
+  float: right;
+  display: block;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  background: url("../images/v119_142.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 0;
+}
+
+.unit-homepage-shopbymaterial__luxury-panel {
+  float: left;
+  display: block;
+  position: relative;
+  width: 50%;
+  margin: 0;
+  padding: 40px;
+}
+
+.unit-homepage-shopbymaterial__luxury-icon {
+  float: left;
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: url("../images/luxury-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.unit-homepage-shopbymaterial__luxury-title {
+  float: left;
+  display: block;
+  position: relative;
+  width: 100%;
+  color: rgba(55, 77, 113, 1);
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 18px;
+  text-align: left;
+  margin-top: 5px;
+}
+
+.unit-homepage-shopbymaterial__luxury-info {
+  float: left;
+  display: block;
+  position: relative;
+  width: 100%;
+  color: rgba(55, 77, 113, 1);
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 16px;
+  text-align: left;
+  margin-top: 5px;
+}
+
+.unit-homepage-shopbymaterial__luxury-action {
+  float: left;
+  display: block;
+  position: relative;
+  width: 100%;
+  color: rgba(55, 77, 113, 1);
+  font-family: Fustat;
+  font-weight: Bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.unit-homepage-shopbymaterial__bamboo {
+  float: left;
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: rgba(191, 238, 209, 1);
+}
+
+.unit-homepage-shopbymaterial__bamboo-picture {
+  float: left;
+  display: block;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  background: url("../images/v119_153.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 0;
+}
+
+.unit-homepage-shopbymaterial__bamboo-panel {
+  float: right;
+  display: block;
+  position: relative;
+  width: 50%;
+  margin: 0;
+  padding: 40px;
+}
+
+.unit-homepage-shopbymaterial__bamboo-icon {
+  float: left;
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: url("../images/bamboo-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.unit-homepage-shopbymaterial__bamboo-title {
+  float: left;
+  display: block;
+  position: relative;
+  width: 100%;
+  color: rgba(55, 77, 113, 1);
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 18px;
+  text-align: left;
+  margin-top: 5px;
+}
+
+.unit-homepage-shopbymaterial__bamboo-info {
+  float: left;
+  display: block;
+  position: relative;
+  width: 100%;
+  color: rgba(55, 77, 113, 1);
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 16px;
+  text-align: left;
+  margin-top: 5px;
+}
+
+.unit-homepage-shopbymaterial__bamboo-action {
+  float: left;
+  display: block;
+  position: relative;
+  width: 100%;
+  color: rgba(55, 77, 113, 1);
+  font-family: Fustat;
+  font-weight: Bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  margin-top: 10px;
+}
