@@ -17,7 +17,7 @@ body {
   margin: 0 auto;
   background: rgba(248, 251, 255, 1);
   position: relative;
-  padding: 20px 0;
+  padding: 50px 0;
   text-align: center;
   overflow: hidden;
 }
@@ -39,7 +39,7 @@ body {
   font-size: 28px;
   line-height: 32px;
   text-align: left;
-  padding: 20px 30px 0 30px;
+  padding: 0 70px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -51,12 +51,12 @@ body {
 
 .unit-homepage-testimony__slider {
   position: relative;
-  top: 10px;
+  top: 0;
   left: 50%;
   transform: translate(-50%, 0);
   display: block;
   overflow: hidden;
-  padding: 10px 30px;
+  padding: 20px 30px;
 }
 
 .unit-homepage-testimony__control {
@@ -120,7 +120,6 @@ body {
   display: inline-block;
   position: relative;
   width: 350px;
-  height: 500px;
   padding: 0 5px;
 }
 

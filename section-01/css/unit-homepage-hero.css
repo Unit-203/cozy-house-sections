@@ -100,7 +100,7 @@ body {
   height: 100%;
   background: linear-gradient(to right, rgba(232, 241, 255, 1) 75%, transparent);
   overflow: hidden;
-  padding: 0 5%;
+  padding: 0 10px 0 70px;
   z-index: 2;
 }
 
@@ -234,7 +234,7 @@ body {
   margin: 8px;
   position: absolute;
   bottom: 5%;
-  left: 5%;
+  left: 70px;
   overflow: hidden;
   z-index: 5;
 }
