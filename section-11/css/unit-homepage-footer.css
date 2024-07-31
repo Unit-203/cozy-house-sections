@@ -142,19 +142,29 @@ body {
 @media only screen and (max-width: 768px) {
   .unit-homepage-footer__action {
     width: 100%;
-    padding: 20px 40px;
+    padding: 40px 20px 10px 20px;
     line-height: 28px;
     font-size: 24px;
   }
 
+  .unit-homepage-footer__iconwrap {
+    width: 60px;
+    height: 60px;
+  }
+
+  .unit-homepage-footer__icon {
+    width: 40px;
+    height: 40px;
+  }
+
   .unit-homepage-footer__chat {
     width: 100%;
-    padding: 20px 40px;
+    padding: 10px 20px;
   }
 
   .unit-homepage-footer__email {
     width: 100%;
-    padding: 20px 40px;
+    padding: 10px 20px;
   }
 
   .unit-homepage-footer__message {
