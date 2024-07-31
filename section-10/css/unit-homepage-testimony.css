@@ -29,6 +29,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .unit-homepage-testimony__section {
+    padding: 40px 0 20px 0;
+  }
+}
+
 .unit-homepage-testimony__header {
   float: left;
   position: relative;
@@ -110,7 +116,7 @@ body {
   display: flex;
   position: relative;
   top: 0;
-  left: -210px;
+  left: -350px;
   width: 10000px;
 }
 
@@ -174,23 +180,27 @@ body {
 
 @media only screen and (max-width: 768px) {
 
+  .unit-homepage-testimony__slides {
+    left: -270px;
+  }
+
   .unit-homepage-testimony__slide {
-    width: 500px;
+    width: 270px;
     height: 385px;
   }
   
   .unit-homepage-testimony__picture {
-    width: 240px;
+    width: 260px;
     height: 385px;
   }
   
   .unit-homepage-testimony__picblur {
-    width: 240px;
+    width: 260px;
     height: 100px;
   }
 
   .unit-homepage-testimony__panel {
-    width: 240px;
+    width: 260px;
     height: 385px;
     font-size: 12px;
     line-height: 16px;

@@ -27,6 +27,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .unit-homepage-footer__section {
+    padding: 0 0 30px 0;
+  }
+}
+
 .unit-homepage-footer__action {
   float: left;
   display: block;

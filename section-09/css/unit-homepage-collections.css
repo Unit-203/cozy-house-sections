@@ -38,6 +38,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .unit-homepage-collections__section {
+    padding: 40px 30px;
+  }
+}
+
 .unit-homepage-collections__header {
   float: left;
   position: relative;
@@ -108,7 +114,7 @@ body {
   }
 
   .unit-homepage-collections__button {
-    margin-top: 20px;
+    margin-top: 15px;
     width: 100%;
   }
 

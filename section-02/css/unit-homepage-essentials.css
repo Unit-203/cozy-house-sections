@@ -94,11 +94,21 @@ body {
 
 @media only screen and (max-width: 768px) {
   .unit-homepage-essentials__features {
-    margin: 10px 0;
+    margin: 10px 0 0 0;
   }
 
   .unit-homepage-essentials__item {
     width: 90%;
     margin: 10px 0;
   }
+
+  .unit-homepage-essentials__image {
+    padding-top: calc(160 / 335 * 100%);
+  }
+
+  .unit-homepage-essentials__caption {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
 }

@@ -160,8 +160,16 @@ body {
 
 @media only screen and (max-width: 992px) {
 
+  .unit-homepage-features__picture {
+    padding-top: calc(260 / 375 * 100%);
+  }
+
   .unit-homepage-features__content {
-    padding: 30px 20px;
+    padding: 30px 20px 20px 20px;
+  }
+
+  .unit-homepage-features__item-icon {
+    padding-top: calc(50 / 60 * 20%);
   }
 
 }

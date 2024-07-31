@@ -31,7 +31,7 @@ body {
   float: left;
   display: block;
   position: relative;
-  width: 40%;
+  width: 34%;
   padding: 80px 50px;
 }
 
@@ -65,7 +65,7 @@ body {
   float: right;
   display: block;
   position: relative;
-  width: 60%;
+  width: 66%;
 }
 
 @media only screen and (max-width: 768px) {
