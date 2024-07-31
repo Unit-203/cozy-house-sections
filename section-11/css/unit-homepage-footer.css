@@ -21,18 +21,6 @@ body {
   padding: 0;
 }
 
-@media only screen and (max-width: 1440px) {
-  .unit-homepage-footer__section {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .unit-homepage-footer__section {
-    padding: 0 0 30px 0;
-  }
-}
-
 .unit-homepage-footer__action {
   float: left;
   display: block;
@@ -125,6 +113,12 @@ body {
   margin-top: 5px;
 }
 
+@media only screen and (max-width: 1440px) {
+  .unit-homepage-footer__section {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .unit-homepage-footer__action {
     width: 100%;
@@ -146,6 +140,10 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  .unit-homepage-footer__section {
+    padding: 0 0 30px 0;
+  }
+
   .unit-homepage-footer__action {
     width: 100%;
     padding: 40px 20px 10px 20px;

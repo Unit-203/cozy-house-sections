@@ -22,19 +22,6 @@ body {
   overflow: hidden;
 }
 
-@media only screen and (max-width: 1440px) {
-  .unit-homepage-brands__section {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .unit-homepage-brands__section {
-    padding: 40px 0 20px 0;
-    width: 100%;
-  }
-}
-
 .unit-homepage-brands__wrapper {
   float: left;
   display: block;
@@ -125,7 +112,17 @@ body {
   z-index: 5;
 }
 
+@media only screen and (max-width: 1440px) {
+  .unit-homepage-brands__section {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
+  .unit-homepage-brands__section {
+    padding: 40px 0 20px 0;
+    width: 100%;
+  }
 
   .unit-homepage-brands__slide {
     width: 50%;

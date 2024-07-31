@@ -21,12 +21,6 @@ body {
   padding: 0;
 }
 
-@media only screen and (max-width: 1440px) {
-  .unit-homepage-shopbymaterial__section {
-    width: 100%;
-  }
-}
-
 .unit-homepage-shopbymaterial__panel {
   float: left;
   display: block;
@@ -66,30 +60,6 @@ body {
   display: block;
   position: relative;
   width: 66%;
-}
-
-@media only screen and (max-width: 768px) {
-  .unit-homepage-shopbymaterial__panel {
-    width: 100%;
-    margin: 0;
-    padding: 40px 20px 20px 20px;
-  }
-
-  .unit-homepage-shopbymaterial__showcase {
-    width: 100%;
-    margin: 0;
-  }
-
-  .unit-homepage-shopbymaterial__panel-title {
-    font-size: 28px;
-    line-height: 32px;
-    text-align: center;
-  }
-
-  .unit-homepage-shopbymaterial__panel-info {
-    font-size: 14px;
-    text-align: center;
-  }
 }
 
 .unit-homepage-shopbymaterial__everyday {
@@ -176,35 +146,6 @@ body {
   margin-top: 20px;
 }
 
-@media only screen and (max-width: 768px) {
-
-  .unit-homepage-shopbymaterial__everyday {
-    height: 200px;
-  }
-
-  .unit-homepage-shopbymaterial__everyday-panel {
-    padding: 20px 10px 20px 20px;
-  }
-
-  .unit-homepage-shopbymaterial__everyday-icon {
-    width: 24px;
-    height: 24px;
-  }
-
-  .unit-homepage-shopbymaterial__everyday-title {
-    font-size: 14px;
-  }
-
-  .unit-homepage-shopbymaterial__everyday-info {
-    font-size: 14px;
-  }
-
-  .unit-homepage-shopbymaterial__everyday-action {
-    margin-top: 20px;
-  }
-
-}
-
 .unit-homepage-shopbymaterial__luxury {
   float: left;
   display: block;
@@ -286,35 +227,6 @@ body {
   line-height: 24px;
   text-align: left;
   margin-top: 20px;
-}
-
-@media only screen and (max-width: 768px) {
-
-  .unit-homepage-shopbymaterial__luxury {
-    height: 200px;
-  }
-
-  .unit-homepage-shopbymaterial__luxury-panel {
-    padding: 20px 10px 20px 20px;
-  }
-
-  .unit-homepage-shopbymaterial__luxury-icon {
-    width: 24px;
-    height: 24px;
-  }
-
-  .unit-homepage-shopbymaterial__luxury-title {
-    font-size: 14px;
-  }
-
-  .unit-homepage-shopbymaterial__luxury-info {
-    font-size: 14px;
-  }
-
-  .unit-homepage-shopbymaterial__luxury-action {
-    margin-top: 20px;
-  }
-
 }
 
 .unit-homepage-shopbymaterial__bamboo {
@@ -400,7 +312,84 @@ body {
   margin-top: 20px;
 }
 
+@media only screen and (max-width: 1440px) {
+  .unit-homepage-shopbymaterial__section {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
+  .unit-homepage-shopbymaterial__panel {
+    width: 100%;
+    margin: 0;
+    padding: 40px 20px 20px 20px;
+  }
+
+  .unit-homepage-shopbymaterial__showcase {
+    width: 100%;
+    margin: 0;
+  }
+
+  .unit-homepage-shopbymaterial__panel-title {
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  .unit-homepage-shopbymaterial__panel-info {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .unit-homepage-shopbymaterial__everyday {
+    height: 200px;
+  }
+
+  .unit-homepage-shopbymaterial__everyday-panel {
+    padding: 20px 10px 20px 20px;
+  }
+
+  .unit-homepage-shopbymaterial__everyday-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .unit-homepage-shopbymaterial__everyday-title {
+    font-size: 14px;
+  }
+
+  .unit-homepage-shopbymaterial__everyday-info {
+    font-size: 14px;
+  }
+
+  .unit-homepage-shopbymaterial__everyday-action {
+    margin-top: 20px;
+  }
+
+  .unit-homepage-shopbymaterial__luxury {
+    height: 200px;
+  }
+
+  .unit-homepage-shopbymaterial__luxury-panel {
+    padding: 20px 10px 20px 20px;
+  }
+
+  .unit-homepage-shopbymaterial__luxury-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .unit-homepage-shopbymaterial__luxury-title {
+    font-size: 14px;
+  }
+
+  .unit-homepage-shopbymaterial__luxury-info {
+    font-size: 14px;
+  }
+
+  .unit-homepage-shopbymaterial__luxury-action {
+    margin-top: 20px;
+  }
 
   .unit-homepage-shopbymaterial__bamboo {
     height: 200px;

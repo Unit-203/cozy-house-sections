@@ -22,19 +22,6 @@ body {
   overflow: hidden;
 }
 
-@media only screen and (max-width: 1440px) {
-  .unit-homepage-testimony__section {
-    width: 100%;
-    padding: 50px 0 20px 0;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .unit-homepage-testimony__section {
-    padding: 40px 0 20px 0;
-  }
-}
-
 .unit-homepage-testimony__header {
   float: left;
   position: relative;
@@ -47,14 +34,6 @@ body {
   line-height: 32px;
   text-align: left;
   z-index: 4;
-}
-
-@media only screen and (max-width: 768px) {
-  .unit-homepage-testimony__header {
-    font-size: 24px;
-    line-height: 28px;
-    padding: 0 20px;
-  }
 }
 
 .unit-homepage-testimony__slider {
@@ -98,7 +77,6 @@ body {
   margin-right: 5px;
   z-index: 20;
 }
-
 
 .unit-homepage-testimony__wrapper {
   float: left;
@@ -173,37 +151,6 @@ body {
   line-height: 20px;
   text-wrap: wrap;
   text-align: left;
-}
-
-@media only screen and (max-width: 768px) {
-
-  .unit-homepage-testimony__slide {
-    width: 270px;
-    height: 385px;
-  }
-
-  .unit-homepage-testimony__item {
-    width: 260px;
-    height: 385px;
-  }
-
-  .unit-homepage-testimony__picture {
-    width: 260px;
-    height: 385px;
-  }
-
-  .unit-homepage-testimony__picblur {
-    width: 260px;
-    height: 100px;
-  }
-
-  .unit-homepage-testimony__panel {
-    width: 260px;
-    height: 385px;
-    font-size: 12px;
-    line-height: 16px;
-    padding: 60px 20px;
-  }
 }
 
 .unit-homepage-testimony__name {
@@ -315,7 +262,52 @@ body {
   z-index: 10;
 }
 
+@media only screen and (max-width: 1440px) {
+  .unit-homepage-testimony__section {
+    width: 100%;
+    padding: 50px 0 20px 0;
+  }
+}
+
 @media only screen and (max-width: 768px) {
+  .unit-homepage-testimony__section {
+    padding: 40px 0 20px 0;
+  }
+
+  .unit-homepage-testimony__header {
+    font-size: 24px;
+    line-height: 28px;
+    padding: 0 20px;
+  }
+
+  .unit-homepage-testimony__slide {
+    width: 270px;
+    height: 385px;
+  }
+
+  .unit-homepage-testimony__item {
+    width: 260px;
+    height: 385px;
+  }
+
+  .unit-homepage-testimony__picture {
+    width: 260px;
+    height: 385px;
+  }
+
+  .unit-homepage-testimony__picblur {
+    width: 260px;
+    height: 100px;
+  }
+
+  .unit-homepage-testimony__panel {
+    width: 260px;
+    height: 385px;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 60px 20px;
+  }
+
   .unit-homepage-testimony__play {
     width: 32px;
     height: 39px;

@@ -33,18 +33,6 @@ body {
   overflow: hidden;
 }
 
-@media only screen and (max-width: 1440px) {
-  .unit-homepage-collections__section {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .unit-homepage-collections__section {
-    padding: 40px 30px;
-  }
-}
-
 .unit-homepage-collections__header {
   float: left;
   position: relative;
@@ -141,7 +129,17 @@ body {
   border-radius: 10px;
 }
 
+@media only screen and (max-width: 1440px) {
+  .unit-homepage-collections__section {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
+  .unit-homepage-collections__section {
+    padding: 40px 30px;
+  }
+
   .unit-homepage-collections__header {
     font-size: 24px;
     line-height: 28px;
