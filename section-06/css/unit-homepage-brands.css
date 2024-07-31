@@ -13,6 +13,7 @@ body {
 .unit-homepage-brands__section {
   display: block;
   width: 1440px;
+  height: 352px;
   margin: 0 auto;
   background: rgba(255, 255, 255, 1);
   position: relative;
@@ -35,21 +36,56 @@ body {
 }
 
 .unit-homepage-brands__wrapper {
-  display: table;
   float: left;
+  display: block;
   position: relative;
   width: 100%;
-  overflow: hidden;
+  height: 352px;
+  margin: 0;
   padding: 0;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  clear: both;
-  transition: margin-left 0.5s ease;
+
+  .slick-dots {
+    list-style-type: none;
+    display: block;
+    position: relative;
+    width: calc(100% - 140px);
+    height: 20px;
+    margin: 0;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 0;
+    overflow: hidden;
+    z-index: 5;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      margin: 0 5px;
+    }
+
+    li button {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: rgba(42, 84, 144, 0.6);
+      border-radius: 50%;
+      border: solid 2px rgba(42, 84, 144, 0.6);
+      margin: 0;
+      padding: 0;
+      color: transparent;
+    }
+
+    li.slick-active button {
+      background: rgba(255, 255, 255, 0.6);
+      border: solid 2px rgba(42, 84, 144, 0.6);
+    }
+  }
 }
 
 .unit-homepage-brands__slide {
-  display: inline-block;
+  float: left;
+  display: block;
   position: relative;
   width: 310px;
   height: 124px;
@@ -92,7 +128,7 @@ body {
 @media only screen and (max-width: 768px) {
 
   .unit-homepage-brands__slide {
-    width: 335px;
+    width: 50%;
     height: 92px;
   }
 
@@ -103,28 +139,10 @@ body {
   }
 }
 
-.unit-homepage-brands__pagination {
-  display: block;
-  width: 100%;
-  height: 16px;
-  position: relative;
-  margin: 10px 0;
-  text-align: center;
-  clear: both;
-}
+@media only screen and (max-width: 480px) {
 
-.unit-homepage-brands__dot {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  background: rgba(42, 84, 144, 0.6);
-  position: relative;
-  border-radius: 50%;
-  margin: 0 4px;
-  border: solid 1px rgba(42, 84, 144, 0.6);
-}
-
-.active {
-  background: rgba(255, 255, 255, 0.6);
-  border: solid 1px rgba(42, 84, 144, 0.6);
+  .unit-homepage-brands__slide {
+    width: 100%;
+    height: 92px;
+  }
 }

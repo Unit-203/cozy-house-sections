@@ -5,40 +5,75 @@
     <link href="./css/unit-homepage-brands.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Section 06</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
-    <section class="unit-homepage-brands__section" id="s6section">
-        <div class="unit-homepage-brands__wrapper" id="s6wrapper">
-            <div class="unit-homepage-brands__slide s6slide">
+    <section class="unit-homepage-brands__section">
+        <div class="unit-homepage-brands__wrapper">
+            <div class="unit-homepage-brands__slide">
                 <div class="unit-homepage-brands__caption">“Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Quisque lacinia, magna eget tempor”</div>
                 <div class="unit-homepage-brands__picture" style="background-image: url('./images/v55_706.png');"></div>
             </div>
-            <div class="unit-homepage-brands__slide s6slide">
+            <div class="unit-homepage-brands__slide">
                 <div class="unit-homepage-brands__caption">“Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit. Quisque lacinia, magna eget tempor”</div>
                 <div class="unit-homepage-brands__picture" style="background-image: url('./images/v55_710.png');"></div>
             </div>
-            <div class="unit-homepage-brands__slide s6slide">
+            <div class="unit-homepage-brands__slide">
                 <div class="unit-homepage-brands__caption">“Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit. Quisque lacinia, magna eget tempor”</div>
                 <div class="unit-homepage-brands__picture" style="background-image: url('./images/v55_714.png');"></div>
             </div>
-            <div class="unit-homepage-brands__slide s6slide">
+            <div class="unit-homepage-brands__slide">
                 <div class="unit-homepage-brands__caption">“Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit. Quisque lacinia, magna eget tempor”</div>
                 <div class="unit-homepage-brands__picture" style="background-image: url('./images/v55_718.png');"></div>
             </div>
         </div>
-        <div class="unit-homepage-brands__pagination">
-            <div class="unit-homepage-brands__dot s6dot" onclick="currentSlide(1)"></div>
-            <div class="unit-homepage-brands__dot s6dot" onclick="currentSlide(2)"></div>
-            <div class="unit-homepage-brands__dot s6dot" onclick="currentSlide(3)"></div>
-            <div class="unit-homepage-brands__dot s6dot" onclick="currentSlide(4)"></div>
-        </div>
     </section>
-    <script type="text/javascript" src="./js/unit-homepage-brands.js"></script>
+    <script>
+        $('.unit-homepage-brands__wrapper').slick({
+            infinite: true,
+            autoplay: false,
+            arrows: false,
+            dots: true,
+            centerMode: true,
+            slidesToShow: 4,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script>
 </body>
 
 </html>

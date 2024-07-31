@@ -5,12 +5,15 @@
     <link href="./css/unit-homepage-hero.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Section 01</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
     <section class="unit-homepage-hero__section">
         <div class="unit-homepage-hero__wrapper">
-            <div class="unit-homepage-hero__slide s1slide fade">
+            <div class="unit-homepage-hero__slide">
                 <div class="unit-homepage-hero__content">
                     <span class="unit-homepage-hero__title">Affordable Luxury, Delivered Daily</span>
                     <span class="unit-homepage-hero__description">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -22,7 +25,7 @@
                 </div>
                 <div class="unit-homepage-hero__image" style="background-image: url('./images/v43_497.png');"></div>
             </div>
-            <div class="unit-homepage-hero__slide s1slide fade">
+            <div class="unit-homepage-hero__slide">
                 <div class="unit-homepage-hero__content">
                     <span class="unit-homepage-hero__title">Affordable Luxury, Delivered Daily 2</span>
                     <span class="unit-homepage-hero__description">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -34,7 +37,7 @@
                 </div>
                 <div class="unit-homepage-hero__image" style="background-image: url('./images/v43_497.png');"></div>
             </div>
-            <div class="unit-homepage-hero__slide s1slide fade">
+            <div class="unit-homepage-hero__slide">
                 <div class="unit-homepage-hero__content">
                     <span class="unit-homepage-hero__title">Affordable Luxury, Delivered Daily 3</span>
                     <span class="unit-homepage-hero__description">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -47,15 +50,16 @@
                 <div class="unit-homepage-hero__image" style="background-image: url('./images/v43_497.png');"></div>
             </div>
         </div>
-        <div class="unit-homepage-hero__pagination">
-            <div class="unit-homepage-hero__pages">
-                <div class="unit-homepage-hero__dot s1dot" onclick="s1currentSlide(1)"></div>
-                <div class="unit-homepage-hero__dot s1dot" onclick="s1currentSlide(2)"></div>
-                <div class="unit-homepage-hero__dot s1dot" onclick="s1currentSlide(3)"></div>
-            </div>
-        </div>
     </section>
-    <script type="text/javascript" src="./js/unit-homepage-hero.js"></script>
+
+    <script>
+        $('.unit-homepage-hero__wrapper').slick({
+            infinite: true,
+            autoplay: true,
+            arrows: false,
+            dots: true
+        });
+    </script>
 </body>
 
 </html>

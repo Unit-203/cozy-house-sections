@@ -4,13 +4,16 @@
 <head>
     <title>Cozy House</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
     <link href="./section-01/css/unit-homepage-hero.css" rel="stylesheet" />
     <section class="unit-homepage-hero__section">
         <div class="unit-homepage-hero__wrapper">
-            <div class="unit-homepage-hero__slide s1slide fade">
+            <div class="unit-homepage-hero__slide">
                 <div class="unit-homepage-hero__content">
                     <span class="unit-homepage-hero__title">Affordable Luxury, Delivered Daily</span>
                     <span class="unit-homepage-hero__description">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -23,7 +26,7 @@
                 <div class="unit-homepage-hero__image"
                     style="background-image: url('./section-01/images/v43_497.png');"></div>
             </div>
-            <div class="unit-homepage-hero__slide s1slide fade">
+            <div class="unit-homepage-hero__slide">
                 <div class="unit-homepage-hero__content">
                     <span class="unit-homepage-hero__title">Affordable Luxury, Delivered Daily 2</span>
                     <span class="unit-homepage-hero__description">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -36,7 +39,7 @@
                 <div class="unit-homepage-hero__image"
                     style="background-image: url('./section-01/images/v43_497.png');"></div>
             </div>
-            <div class="unit-homepage-hero__slide s1slide fade">
+            <div class="unit-homepage-hero__slide">
                 <div class="unit-homepage-hero__content">
                     <span class="unit-homepage-hero__title">Affordable Luxury, Delivered Daily 3</span>
                     <span class="unit-homepage-hero__description">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -50,15 +53,15 @@
                     style="background-image: url('./section-01/images/v43_497.png');"></div>
             </div>
         </div>
-        <div class="unit-homepage-hero__pagination">
-            <div class="unit-homepage-hero__pages">
-                <div class="unit-homepage-hero__dot s1dot" onclick="s1currentSlide(1)"></div>
-                <div class="unit-homepage-hero__dot s1dot" onclick="s1currentSlide(2)"></div>
-                <div class="unit-homepage-hero__dot s1dot" onclick="s1currentSlide(3)"></div>
-            </div>
-        </div>
     </section>
-    <script type="text/javascript" src="./section-01/js/unit-homepage-hero.js"></script>
+    <script>
+        $('.unit-homepage-hero__wrapper').slick({
+            infinite: true,
+            autoplay: true,
+            arrows: false,
+            dots: true
+        });
+    </script>
 
     <link href="./section-02/css/unit-homepage-essentials.css" rel="stylesheet" />
     <section class="unit-homepage-essentials__section">
@@ -333,14 +336,46 @@
                     style="background-image: url('./section-06/images/v55_718.png');"></div>
             </div>
         </div>
-        <div class="unit-homepage-brands__pagination">
-            <div class="unit-homepage-brands__dot s6dot" onclick="s6currentSlide(1)"></div>
-            <div class="unit-homepage-brands__dot s6dot" onclick="s6currentSlide(2)"></div>
-            <div class="unit-homepage-brands__dot s6dot" onclick="s6currentSlide(3)"></div>
-            <div class="unit-homepage-brands__dot s6dot" onclick="s6currentSlide(4)"></div>
-        </div>
     </section>
-    <script type="text/javascript" src="./section-06/js/unit-homepage-brands.js"></script>
+    <script>
+        $('.unit-homepage-brands__wrapper').slick({
+            infinite: true,
+            autoplay: false,
+            arrows: false,
+            dots: true,
+            centerMode: true,
+            slidesToShow: 4,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script>
 
     <link href="./section-07/css/unit-homepage-trending.css" rel="stylesheet" />
     <section class="unit-homepage-trending__section">
@@ -542,37 +577,69 @@
     </section>
 
     <link href="./section-09/css/unit-homepage-collections.css" rel="stylesheet" />
-    <section class="unit-homepage-collections__section" id="s9section">
+    <section class="unit-homepage-collections__section">
         <div class="unit-homepage-collections__header">Cosy House Collection at Home</div>
-        <div class="unit-homepage-collections__wrapper" id="s9wrapper">
-            <div class="unit-homepage-collections__slide s9slide"
+        <div class="unit-homepage-collections__wrapper">
+            <div class="unit-homepage-collections__slide"
                 style="background-image: url('./section-09/images/v43_454.png');">
             </div>
-            <div class="unit-homepage-collections__slide s9slide"
+            <div class="unit-homepage-collections__slide"
                 style="background-image: url('./section-09/images/v43_457.png');">
             </div>
-            <div class="unit-homepage-collections__slide s9slide"
+            <div class="unit-homepage-collections__slide"
                 style="background-image: url('./section-09/images/v43_460.png');">
             </div>
-            <div class="unit-homepage-collections__slide s9slide"
+            <div class="unit-homepage-collections__slide"
                 style="background-image: url('./section-09/images/v43_463.png');">
             </div>
-            <div class="unit-homepage-collections__slide s9slide"
+            <div class="unit-homepage-collections__slide"
                 style="background-image: url('./section-09/images/v43_466.png');">
             </div>
-        </div>
-        <div class="unit-homepage-collections__pagination">
-            <div class="unit-homepage-collections__dot s9dot" onclick="s9currentSlide(1)"></div>
-            <div class="unit-homepage-collections__dot s9dot" onclick="s9currentSlide(2)"></div>
-            <div class="unit-homepage-collections__dot s9dot" onclick="s9currentSlide(3)"></div>
-            <div class="unit-homepage-collections__dot s9dot" onclick="s9currentSlide(4)"></div>
-            <div class="unit-homepage-collections__dot s9dot" onclick="s9currentSlide(5)"></div>
         </div>
         <div class="unit-homepage-collections__action">
             <div class="unit-homepage-collections__button">SHOP NOW</div>
         </div>
     </section>
-    <script type="text/javascript" src="./section-09/js/unit-homepage-collections.js"></script>
+    <script>
+        $('.unit-homepage-collections__wrapper').slick({
+            infinite: true,
+            autoplay: false,
+            arrows: false,
+            dots: true,
+            centerMode: true,
+            adaptiveHeight: true,
+            slidesToShow: 5,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script>
 
 
     <link href="./section-10/css/unit-homepage-testimony.css" rel="stylesheet" />
