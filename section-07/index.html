@@ -5,20 +5,18 @@
     <link href="./css/unit-homepage-trending.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Section 07</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
     <section class="unit-homepage-trending__section">
-            <div class="unit-homepage-trending__header">Trending & Top Rated
-                <div class="unit-homepage-trending__control">
-                    <span class="unit-homepage-trending__prev" id="s7prev"></span>
-                    <span class="unit-homepage-trending__next" id="s7next"></span>
-                </div>
-            </div>
-            <div class="unit-homepage-trending__slider" id="s7slider">
-                <div class="unit-homepage-trending__wrapper">
-                <div class="unit-homepage-trending__slides" id="s7slides">
-                    <div class="unit-homepage-trending__slide s7slide">
+        <div class="unit-homepage-trending__slider">
+            <span class="unit-homepage-trending__header">Trending & Top Rated</span>
+            <div class="unit-homepage-trending__wrapper">
+                <div class="unit-homepage-trending__slide">
+                    <div class="unit-homepage-trending__item">
                         <div class="unit-homepage-trending__picture"
                             style="background-image: url('./images/v43_211.png');">
                             <span class="unit-homepage-trending__tag--off">55% off</span>
@@ -51,7 +49,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="unit-homepage-trending__slide s7slide">
+                </div>
+                <div class="unit-homepage-trending__slide">
+                    <div class="unit-homepage-trending__item">
                         <div class="unit-homepage-trending__picture"
                             style="background-image: url('./images/v43_239.png');">
                             <span class="unit-homepage-trending__tag--new">Bestseller</span>
@@ -83,7 +83,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="unit-homepage-trending__slide s7slide">
+                </div>
+                <div class="unit-homepage-trending__slide">
+                    <div class="unit-homepage-trending__item">
                         <div class="unit-homepage-trending__picture"
                             style="background-image: url('./images/v43_264.png');">
 
@@ -109,7 +111,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="unit-homepage-trending__slide s7slide">
+                </div>
+                <div class="unit-homepage-trending__slide">
+                    <div class="unit-homepage-trending__item">
                         <div class="unit-homepage-trending__picture"
                             style="background-image: url('./images/v43_280.png');">
                             <span class="unit-homepage-trending__tag--new">New</span>
@@ -130,7 +134,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="unit-homepage-trending__slide s7slide">
+                </div>
+                <div class="unit-homepage-trending__slide">
+                    <div class="unit-homepage-trending__item">
                         <div class="unit-homepage-trending__picture"
                             style="background-image: url('./images/v43_296.png');">
                         </div>
@@ -162,7 +168,47 @@
             </div>
         </div>
     </section>
-    <script type="text/javascript" src="./js/unit-homepage-trending.js"></script>
+    <script>
+        $('.unit-homepage-trending__wrapper').slick({
+            infinite: true,
+            autoplay: false,
+            arrows: true,
+            dots: false,
+            centerMode: true,
+            slidesToShow: 4,
+            prevArrow: '<span class="unit-homepage-trending__prev"></span>',
+            nextArrow: '<span class="unit-homepage-trending__next"></span>',
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        arrows: true,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        arrows: true,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script>
 </body>
 
 </html>

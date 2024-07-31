@@ -121,16 +121,11 @@
 
     <link href="./section-04/css/unit-homepage-bestsellers.css" rel="stylesheet" />
     <section class="unit-homepage-bestsellers__section">
-        <div class="unit-homepage-bestsellers__header">Our Best Sellers
-            <div class="unit-homepage-bestsellers__control">
-                <span class="unit-homepage-bestsellers__prev" id="s4prev"></span>
-                <span class="unit-homepage-bestsellers__next" id="s4next"></span>
-            </div>
-        </div>
-        <div class="unit-homepage-bestsellers__slider" id="s4slider">
+        <div class="unit-homepage-bestsellers__slider">
+            <span class="unit-homepage-bestsellers__header">Our Best Sellers </span>
             <div class="unit-homepage-bestsellers__wrapper">
-                <div class="unit-homepage-bestsellers__slides" id="s4slides">
-                    <div class="unit-homepage-bestsellers__slide s4slide">
+                <div class="unit-homepage-bestsellers__slide">
+                    <div class="unit-homepage-bestsellers__item">
                         <div class="unit-homepage-bestsellers__picture"
                             style="background-image: url('./section-04/images/v43_43.png');">
                             <span class="unit-homepage-bestsellers__tag--off">38% off</span>
@@ -163,7 +158,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="unit-homepage-bestsellers__slide s4slide">
+                </div>
+                <div class="unit-homepage-bestsellers__slide">
+                    <div class="unit-homepage-bestsellers__item">
                         <div class="unit-homepage-bestsellers__picture"
                             style="background-image: url('./section-04/images/v43_71.png');">
                             <span class="unit-homepage-bestsellers__tag--off">62% off</span>
@@ -188,7 +185,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="unit-homepage-bestsellers__slide s4slide">
+                </div>
+                <div class="unit-homepage-bestsellers__slide">
+                    <div class="unit-homepage-bestsellers__item">
                         <div class="unit-homepage-bestsellers__picture"
                             style="background-image: url('./section-04/images/v43_87.png');">
 
@@ -222,7 +221,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="unit-homepage-bestsellers__slide s4slide">
+                </div>
+                <div class="unit-homepage-bestsellers__slide">
+                    <div class="unit-homepage-bestsellers__item">
                         <div class="unit-homepage-bestsellers__picture"
                             style="background-image: url('./section-04/images/v43_115.png');">
                             <span class="unit-homepage-bestsellers__tag--new">New</span>
@@ -254,7 +255,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="unit-homepage-bestsellers__slide s4slide">
+                </div>
+                <div class="unit-homepage-bestsellers__slide">
+                    <div class="unit-homepage-bestsellers__item">
                         <div class="unit-homepage-bestsellers__picture"
                             style="background-image: url('./section-04/images/v43_143.png');"></div>
 
@@ -289,7 +292,47 @@
             </div>
         </div>
     </section>
-    <script type="text/javascript" src="./section-04/js/unit-homepage-bestsellers.js"></script>
+    <script>
+        $('.unit-homepage-bestsellers__wrapper').slick({
+            infinite: true,
+            autoplay: false,
+            arrows: true,
+            dots: false,
+            centerMode: true,
+            slidesToShow: 4,
+            prevArrow: '<span class="unit-homepage-bestsellers__prev"></span>',
+            nextArrow: '<span class="unit-homepage-bestsellers__next"></span>',
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        arrows: true,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        arrows: true,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script>
 
     <link href="./section-05/css/unit-homepage-hero2.css" rel="stylesheet" />
     <section class="unit-homepage-hero2__section">
@@ -379,16 +422,11 @@
 
     <link href="./section-07/css/unit-homepage-trending.css" rel="stylesheet" />
     <section class="unit-homepage-trending__section">
-        <div class="unit-homepage-trending__header">Trending & Top Rated
-            <div class="unit-homepage-trending__control">
-                <span class="unit-homepage-trending__prev" id="s7prev"></span>
-                <span class="unit-homepage-trending__next" id="s7next"></span>
-            </div>
-        </div>
-        <div class="unit-homepage-trending__slider" id="s7slider">
+        <div class="unit-homepage-trending__slider">
+            <span class="unit-homepage-trending__header">Trending & Top Rated</span>
             <div class="unit-homepage-trending__wrapper">
-                <div class="unit-homepage-trending__slides" id="s7slides">
-                    <div class="unit-homepage-trending__slide s7slide">
+                <div class="unit-homepage-trending__slide">
+                    <div class="unit-homepage-trending__item">
                         <div class="unit-homepage-trending__picture"
                             style="background-image: url('./section-07/images/v43_211.png');">
                             <span class="unit-homepage-trending__tag--off">55% off</span>
@@ -421,7 +459,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="unit-homepage-trending__slide s7slide">
+                </div>
+                <div class="unit-homepage-trending__slide">
+                    <div class="unit-homepage-trending__item">
                         <div class="unit-homepage-trending__picture"
                             style="background-image: url('./section-07/images/v43_239.png');">
                             <span class="unit-homepage-trending__tag--new">Bestseller</span>
@@ -453,7 +493,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="unit-homepage-trending__slide s7slide">
+                </div>
+                <div class="unit-homepage-trending__slide">
+                    <div class="unit-homepage-trending__item">
                         <div class="unit-homepage-trending__picture"
                             style="background-image: url('./section-07/images/v43_264.png');">
 
@@ -479,7 +521,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="unit-homepage-trending__slide s7slide">
+                </div>
+                <div class="unit-homepage-trending__slide">
+                    <div class="unit-homepage-trending__item">
                         <div class="unit-homepage-trending__picture"
                             style="background-image: url('./section-07/images/v43_280.png');">
                             <span class="unit-homepage-trending__tag--new">New</span>
@@ -500,7 +544,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="unit-homepage-trending__slide s7slide">
+                </div>
+                <div class="unit-homepage-trending__slide">
+                    <div class="unit-homepage-trending__item">
                         <div class="unit-homepage-trending__picture"
                             style="background-image: url('./section-07/images/v43_296.png');">
                         </div>
@@ -532,7 +578,47 @@
             </div>
         </div>
     </section>
-    <script type="text/javascript" src="./section-07/js/unit-homepage-trending.js"></script>
+    <script>
+        $('.unit-homepage-trending__wrapper').slick({
+            infinite: true,
+            autoplay: false,
+            arrows: true,
+            dots: false,
+            centerMode: true,
+            slidesToShow: 4,
+            prevArrow: '<span class="unit-homepage-trending__prev"></span>',
+            nextArrow: '<span class="unit-homepage-trending__next"></span>',
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        arrows: true,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        arrows: true,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script>
 
     <link href="./section-08/css/unit-homepage-shopbymaterial.css" rel="stylesheet" />
     <section class="unit-homepage-shopbymaterial__section">
@@ -644,99 +730,123 @@
 
     <link href="./section-10/css/unit-homepage-testimony.css" rel="stylesheet" />
     <section class="unit-homepage-testimony__section">
-        <div class="unit-homepage-testimony__header">Why Customers Love Cosy House Collection
-            <div class="unit-homepage-testimony__control">
-                <a class="unit-homepage-testimony__prev" id="s10prev"></a>
-                <a class="unit-homepage-testimony__next" id="s10next"></a>
-            </div>
-        </div>
-        <div class="unit-homepage-testimony__slider" id="s10slider">
+        <div class="unit-homepage-testimony__slider">
+            <span class="unit-homepage-testimony__header">Why Customers Love Cosy House Collection</span>
             <div class="unit-homepage-testimony__wrapper">
-                <div class="unit-homepage-testimony__slides" id="s10slides">
-
-                    <div class="unit-homepage-testimony__slide s10slide">
-                        <div class="unit-homepage-testimony__picture"
-                            style="background-image: url('./section-10/images/v43_344.png');">
-                            <div class="unit-homepage-testimony__picblur"></div>
-                            <div class="unit-homepage-testimony__mute"></div>
-                            <div class="unit-homepage-testimony__play"></div>
-                            <span class="unit-homepage-testimony__name">@Username</span>
-                        </div>
+                <div class="unit-homepage-testimony__slide">
+                    <div class="unit-homepage-testimony__picture"
+                        style="background-image: url('./section-10/images/v43_344.png');">
+                        <div class="unit-homepage-testimony__picblur"></div>
+                        <div class="unit-homepage-testimony__mute"></div>
+                        <div class="unit-homepage-testimony__play"></div>
+                        <span class="unit-homepage-testimony__name">@Username</span>
                     </div>
-                    <div class="unit-homepage-testimony__slide s10slide">
-                        <div class="unit-homepage-testimony__panel">
-                            <div class="unit-homepage-testimony__rating">
-                                <div class="unit-homepage-testimony__star"></div>
-                                <div class="unit-homepage-testimony__star"></div>
-                                <div class="unit-homepage-testimony__star"></div>
-                                <div class="unit-homepage-testimony__star"></div>
-                                <div class="unit-homepage-testimony__star"></div>
-                            </div>
-                            OMG! When my fingers first touched my duvet cover I couldn’t believe how soft it was! I
-                            have other
-                            duvet covers but I know I’ll never use them again. I have an AirB&B unit and I had to
-                            order another
-                            cover to use on the duvet for the bed in there as well.
-                            <br />People already rave about the Cozy House sheets I have on the bed. I love the
-                            zipper instead
-                            of buttons. It saves time and gives a cleaner look. You will be delighted with this
-                            product!
-                            <br />This is a completely unsolicited review.
-                            <span class="unit-homepage-testimony__name">Rebecca E.</span>
+                </div>
+                <div class="unit-homepage-testimony__slide">
+                    <div class="unit-homepage-testimony__panel">
+                        <div class="unit-homepage-testimony__rating">
+                            <div class="unit-homepage-testimony__star"></div>
+                            <div class="unit-homepage-testimony__star"></div>
+                            <div class="unit-homepage-testimony__star"></div>
+                            <div class="unit-homepage-testimony__star"></div>
+                            <div class="unit-homepage-testimony__star"></div>
                         </div>
+                        OMG! When my fingers first touched my duvet cover I couldn’t believe how soft it was! I
+                        have other
+                        duvet covers but I know I’ll never use them again. I have an AirB&B unit and I had to
+                        order another
+                        cover to use on the duvet for the bed in there as well.
+                        <br />People already rave about the Cozy House sheets I have on the bed. I love the
+                        zipper instead
+                        of buttons. It saves time and gives a cleaner look. You will be delighted with this
+                        product!
+                        <br />This is a completely unsolicited review.
+                        <span class="unit-homepage-testimony__name">Rebecca E.</span>
                     </div>
-                    <div class="unit-homepage-testimony__slide s10slide">
-                        <div class="unit-homepage-testimony__picture"
-                            style="background-image: url('./section-10/images/v43_365.png');">
-                            <div class="unit-homepage-testimony__picblur"></div>
-                            <div class="unit-homepage-testimony__unmute"></div>
-                            <div class="unit-homepage-testimony__pause"></div>
-                            <span class="unit-homepage-testimony__name">@Username</span>
-                        </div>
+                </div>
+                <div class="unit-homepage-testimony__slide">
+                    <div class="unit-homepage-testimony__picture"
+                        style="background-image: url('./section-10/images/v43_365.png');">
+                        <div class="unit-homepage-testimony__picblur"></div>
+                        <div class="unit-homepage-testimony__unmute"></div>
+                        <div class="unit-homepage-testimony__pause"></div>
+                        <span class="unit-homepage-testimony__name">@Username</span>
                     </div>
-                    <div class="unit-homepage-testimony__slide s10slide">
-                        <div class="unit-homepage-testimony__panel">
-                            <div class="unit-homepage-testimony__rating">
-                                <div class="unit-homepage-testimony__star"></div>
-                                <div class="unit-homepage-testimony__star"></div>
-                                <div class="unit-homepage-testimony__star"></div>
-                                <div class="unit-homepage-testimony__star"></div>
-                                <div class="unit-homepage-testimony__star"></div>
-                            </div>
-                            I got my new Cosy House Luxury Comforter made with bamboo viscose and I absolutely love
-                            it! I have
-                            ovarian cancer and because of my surgery I get awful hot flashes and night sweats and
-                            with this
-                            comforter it helps keep me cool and cozy!! It's also super soft!
-                            <br />Dog approved, hubby approved, and most importantly I approve! Normally I would
-                            expect to pay
-                            hundreds of dollars for such a luxurious item but it’s UNDER $100!!!! Love my new Cosy!!
-                            <span class="unit-homepage-testimony__name">Brianna W.</span>
+                </div>
+                <div class="unit-homepage-testimony__slide">
+                    <div class="unit-homepage-testimony__panel">
+                        <div class="unit-homepage-testimony__rating">
+                            <div class="unit-homepage-testimony__star"></div>
+                            <div class="unit-homepage-testimony__star"></div>
+                            <div class="unit-homepage-testimony__star"></div>
+                            <div class="unit-homepage-testimony__star"></div>
+                            <div class="unit-homepage-testimony__star"></div>
                         </div>
+                        I got my new Cosy House Luxury Comforter made with bamboo viscose and I absolutely love
+                        it! I have
+                        ovarian cancer and because of my surgery I get awful hot flashes and night sweats and
+                        with this
+                        comforter it helps keep me cool and cozy!! It's also super soft!
+                        <br />Dog approved, hubby approved, and most importantly I approve! Normally I would
+                        expect to pay
+                        hundreds of dollars for such a luxurious item but it’s UNDER $100!!!! Love my new Cosy!!
+                        <span class="unit-homepage-testimony__name">Brianna W.</span>
                     </div>
-                    <div class="unit-homepage-testimony__slide s10slide">
-                        <div class="unit-homepage-testimony__panel">
-                            <div class="unit-homepage-testimony__rating">
-                                <div class="unit-homepage-testimony__star"></div>
-                                <div class="unit-homepage-testimony__star"></div>
-                                <div class="unit-homepage-testimony__star"></div>
-                                <div class="unit-homepage-testimony__star"></div>
-                                <div class="unit-homepage-testimony__star"></div>
-                            </div>
-                            Are you ready for the best sleep of your life?! I’m such a hot sleeper and often find
-                            myself tossing
-                            and turning…but not since using this Luxury Down Alternative Comforter from Cosy House!
-                            With its
-                            bamboo viscose fabric making it softer than cotton, you’ll never look back!! Bonus: it’s
-                            hypoallergenic too!!I’m seriously obsessed. I’m going to have to order the sheets now!
-                            <span class="unit-homepage-testimony__name">Karissa Ferguson</span>
+                </div>
+                <div class="unit-homepage-testimony__slide">
+                    <div class="unit-homepage-testimony__panel">
+                        <div class="unit-homepage-testimony__rating">
+                            <div class="unit-homepage-testimony__star"></div>
+                            <div class="unit-homepage-testimony__star"></div>
+                            <div class="unit-homepage-testimony__star"></div>
+                            <div class="unit-homepage-testimony__star"></div>
+                            <div class="unit-homepage-testimony__star"></div>
                         </div>
+                        Are you ready for the best sleep of your life?! I’m such a hot sleeper and often find
+                        myself tossing
+                        and turning…but not since using this Luxury Down Alternative Comforter from Cosy House!
+                        With its
+                        bamboo viscose fabric making it softer than cotton, you’ll never look back!! Bonus: it’s
+                        hypoallergenic too!!I’m seriously obsessed. I’m going to have to order the sheets now!
+                        <span class="unit-homepage-testimony__name">Karissa Ferguson</span>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
     </section>
-    <script type="text/javascript" src="./section-10/js/unit-homepage-testimony.js"></script>
+    <script>
+        $('.unit-homepage-testimony__wrapper').slick({
+            infinite: true,
+            autoplay: false,
+            arrows: true,
+            dots: false,
+            centerMode: true,
+            slidesToShow: 3,
+            prevArrow: '<span class="unit-homepage-testimony__prev"></span>',
+            nextArrow: '<span class="unit-homepage-testimony__next"></span>',
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        arrows: true,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script>
 
     <link href="./section-11/css/unit-homepage-footer.css" rel="stylesheet" />
     <section class="unit-homepage-footer__section">

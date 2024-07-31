@@ -39,14 +39,14 @@ body {
   float: left;
   position: relative;
   display: block;
-  width: 100%;
+  padding: 0 0 20px 70px;
   color: rgba(5, 43, 102, 1);
   font-family: Noto Serif;
   font-weight: Regular;
   font-size: 28px;
   line-height: 32px;
   text-align: left;
-  padding: 0 70px;
+  z-index: 4;
 }
 
 @media only screen and (max-width: 768px) {
@@ -67,15 +67,11 @@ body {
   padding: 20px 30px;
 }
 
-.unit-homepage-testimony__control {
-  float: right;
-  display: block;
-  position: relative;
-}
-
 .unit-homepage-testimony__prev {
   display: inline-block;
-  position: relative;
+  position: absolute;
+  top: -70px;
+  right: 120px;
   width: 55px;
   height: 55px;
   background: url("../images/arrow-left.svg");
@@ -84,11 +80,14 @@ body {
   background-size: contain;
   margin-top: 2px;
   margin-right: 5px;
+  z-index: 20;
 }
 
 .unit-homepage-testimony__next {
   display: inline-block;
-  position: relative;
+  position: absolute;
+  top: -70px;
+  right: 50px;
   width: 55px;
   height: 55px;
   background: url("../images/arrow-right.svg");
@@ -97,38 +96,36 @@ body {
   background-size: contain;
   margin-top: 2px;
   margin-right: 5px;
-}
-
-@media only screen and (max-width: 768px) {
-  .unit-homepage-testimony__control {
-    display: none;
-  }
+  z-index: 20;
 }
 
 
 .unit-homepage-testimony__wrapper {
-  overflow: hidden;
+  float: left;
+  display: block;
   position: relative;
   width: 100%;
-}
-
-.unit-homepage-testimony__slides {
-  display: flex;
-  position: relative;
-  top: 0;
-  left: -350px;
-  width: 10000px;
-}
-
-.unit-homepage-testimony__slides.shifting {
-  transition: left 0.2s ease-out;
+  height: 485px;
+  margin: 0;
+  padding: 0;
 }
 
 .unit-homepage-testimony__slide {
-  display: inline-block;
+  float: left;
+  display: block;
+  position: relative;
+  width: 360px;
+  padding: 0 5px;
+  margin: 0;
+}
+
+.unit-homepage-testimony__item {
+  float: left;
+  display: block;
   position: relative;
   width: 350px;
-  padding: 0 5px;
+  padding: 0;
+  margin: 0;
 }
 
 .unit-homepage-testimony__picture {
@@ -180,20 +177,21 @@ body {
 
 @media only screen and (max-width: 768px) {
 
-  .unit-homepage-testimony__slides {
-    left: -270px;
-  }
-
   .unit-homepage-testimony__slide {
     width: 270px;
     height: 385px;
   }
-  
+
+  .unit-homepage-testimony__item {
+    width: 260px;
+    height: 385px;
+  }
+
   .unit-homepage-testimony__picture {
     width: 260px;
     height: 385px;
   }
-  
+
   .unit-homepage-testimony__picblur {
     width: 260px;
     height: 100px;
@@ -324,21 +322,21 @@ body {
     top: 150px;
     left: 114px;
   }
-  
+
   .unit-homepage-testimony__pause {
     width: 32px;
     height: 39px;
     top: 150px;
     left: 114px;
   }
-  
+
   .unit-homepage-testimony__mute {
     width: 26px;
     height: 19px;
     top: 20px;
     left: 190px;
   }
-  
+
   .unit-homepage-testimony__unmute {
     width: 26px;
     height: 19px;
