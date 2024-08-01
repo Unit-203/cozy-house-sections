@@ -5,6 +5,7 @@ $('.unit-homepage-brands__wrapper').slick({
     dots: true,
     centerMode: false,
     slidesToShow: 4,
+    slidesToScroll: 4,
     responsive: [
         {
             breakpoint: 992,
@@ -12,7 +13,8 @@ $('.unit-homepage-brands__wrapper').slick({
                 arrows: false,
                 centerMode: false,
                 centerPadding: '40px',
-                slidesToShow: 3
+                slidesToShow: 3,
+                slidesToScroll: 3
             }
         },
         {
@@ -21,7 +23,8 @@ $('.unit-homepage-brands__wrapper').slick({
                 arrows: false,
                 centerMode: false,
                 centerPadding: '40px',
-                slidesToShow: 2
+                slidesToShow: 2,
+                slidesToScroll: 2
             }
         },
         {
@@ -30,7 +33,8 @@ $('.unit-homepage-brands__wrapper').slick({
                 arrows: false,
                 centerMode: false,
                 centerPadding: '40px',
-                slidesToShow: 1
+                slidesToShow: 1,
+                slidesToScroll: 1
             }
         }
     ]
