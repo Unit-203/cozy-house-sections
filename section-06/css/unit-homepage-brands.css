@@ -68,6 +68,10 @@ body {
       border: solid 2px rgba(42, 84, 144, 0.6);
     }
   }
+
+  .slick-track {
+    margin-left: 70px;
+  }
 }
 
 .unit-homepage-brands__slide {
@@ -139,13 +143,17 @@ body {
     display: block;
     position: relative;
     width: 100%;
-    height: 110px;
+    height: 130px;
     margin: 20px 0;
     padding: 0;
     overflow: hidden;
   
     .slick-dots {
-      top: 100px;
+      top: 120px;
+    }
+
+    .slick-track {
+      margin-left: -25px;
     }
   }
 
@@ -160,7 +168,7 @@ body {
   }
 
   .unit-homepage-brands__picture {
-    bottom: 0;
+    top: 60px;
     height: 43px;
   }
 

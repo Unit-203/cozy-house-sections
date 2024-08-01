@@ -87,6 +87,11 @@ body {
   height: 485px;
   margin: 0;
   padding: 0;
+
+  .slick-track {
+    margin-left: 100px;
+  }
+
 }
 
 .unit-homepage-trending__slide {
@@ -395,10 +400,18 @@ body {
   .unit-homepage-trending__header {
     font-size: 24px;
     line-height: 28px;
+    width: 100vw;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 20px 0;
   }
 
   .unit-homepage-trending__wrapper {
     height: 398px;
+
+    .slick-track {
+      margin-left: 30px;
+    }
   }
 
   .unit-homepage-trending__slide {

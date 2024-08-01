@@ -3,7 +3,7 @@ $('.unit-homepage-testimony__wrapper').slick({
     autoplay: false,
     arrows: true,
     dots: false,
-    centerMode: true,
+    centerMode: false,
     slidesToShow: 3,
     prevArrow: '<span class="unit-homepage-testimony__prev"></span>',
     nextArrow: '<span class="unit-homepage-testimony__next"></span>',
@@ -12,8 +12,7 @@ $('.unit-homepage-testimony__wrapper').slick({
             breakpoint: 992,
             settings: {
                 arrows: true,
-                centerMode: true,
-                centerPadding: '40px',
+                centerMode: false,
                 slidesToShow: 2
             }
         },
@@ -21,8 +20,7 @@ $('.unit-homepage-testimony__wrapper').slick({
             breakpoint: 768,
             settings: {
                 arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
+                centerMode: false,
                 slidesToShow: 1
             }
         }

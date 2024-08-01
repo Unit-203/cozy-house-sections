@@ -153,14 +153,15 @@ body {
 
 @media only screen and (max-width: 768px) {
   .unit-homepage-collections__section {
-    padding: 40px 30px;
+    padding: 40px 0 40px 0;
+    height: 403px;
   }
 
   .unit-homepage-collections__header {
     font-size: 24px;
     line-height: 28px;
     margin-bottom: 0;
-    padding: 0 20px;
+    padding: 0 30px;
   }
 
   .unit-homepage-collections__button {
@@ -169,8 +170,13 @@ body {
   }
 
   .unit-homepage-collections__wrapper {
-    padding: 20px 0 10px 0;
-    margin-bottom: 10px;
+    padding: 0;
+    margin: 20px 0;
+    height: 160px;
+
+    .slick-dots {
+      top: 80px;
+    }
   }
 
   .unit-homepage-collections__slide {
