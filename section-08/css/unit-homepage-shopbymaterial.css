@@ -91,15 +91,15 @@ body {
   position: relative;
   width: 50%;
   margin: 0;
-  padding: 40px;
+  padding: 7%;
 }
 
 .unit-homepage-shopbymaterial__everyday-icon {
   float: left;
   display: block;
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 33px;
+  height: 33px;
   background: url("../images/everyday-icon.svg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -116,7 +116,7 @@ body {
   font-weight: Bold;
   font-size: 18px;
   text-align: left;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .unit-homepage-shopbymaterial__everyday-info {
@@ -144,6 +144,7 @@ body {
   line-height: 24px;
   text-align: left;
   margin-top: 20px;
+  letter-spacing: 0.15em;
 }
 
 .unit-homepage-shopbymaterial__luxury {
@@ -174,15 +175,15 @@ body {
   position: relative;
   width: 50%;
   margin: 0;
-  padding: 40px;
+  padding: 7%;
 }
 
 .unit-homepage-shopbymaterial__luxury-icon {
   float: left;
   display: block;
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 33px;
+  height: 33px;
   background: url("../images/luxury-icon.svg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -199,7 +200,7 @@ body {
   font-weight: Bold;
   font-size: 18px;
   text-align: left;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .unit-homepage-shopbymaterial__luxury-info {
@@ -227,6 +228,7 @@ body {
   line-height: 24px;
   text-align: left;
   margin-top: 20px;
+  letter-spacing: 0.15em;
 }
 
 .unit-homepage-shopbymaterial__bamboo {
@@ -257,15 +259,15 @@ body {
   position: relative;
   width: 50%;
   margin: 0;
-  padding: 40px;
+  padding: 7%;
 }
 
 .unit-homepage-shopbymaterial__bamboo-icon {
   float: left;
   display: block;
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 33px;
+  height: 33px;
   background: url("../images/bamboo-icon.svg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -282,7 +284,7 @@ body {
   font-weight: Bold;
   font-size: 18px;
   text-align: left;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .unit-homepage-shopbymaterial__bamboo-info {
@@ -310,6 +312,7 @@ body {
   line-height: 24px;
   text-align: left;
   margin-top: 20px;
+  letter-spacing: 0.15em;
 }
 
 @media only screen and (max-width: 1440px) {
@@ -355,6 +358,7 @@ body {
   }
 
   .unit-homepage-shopbymaterial__everyday-title {
+    margin-top: 5px;
     font-size: 14px;
   }
 
@@ -380,6 +384,7 @@ body {
   }
 
   .unit-homepage-shopbymaterial__luxury-title {
+    margin-top: 5px;
     font-size: 14px;
   }
 
@@ -405,6 +410,7 @@ body {
   }
 
   .unit-homepage-shopbymaterial__bamboo-title {
+    margin-top: 5px;
     font-size: 14px;
   }
 

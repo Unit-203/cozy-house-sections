@@ -6,22 +6,6 @@
   box-sizing: border-box;
 }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {
-    opacity: .4
-  }
-
-  to {
-    opacity: 1
-  }
-}
-
 body {
   font-size: 14px;
   margin: 0;
@@ -55,7 +39,7 @@ body {
     width: calc(100% - 140px);
     height: 20px;
     margin: 0;
-    bottom: 120px;
+    bottom: 50px;
     left: 70px;
     padding: 0;
     overflow: hidden;
@@ -63,7 +47,9 @@ body {
     text-align: left;
 
     li {
+      height: 10px;
       display: inline-block;
+      vertical-align: middle;
       margin: 0 5px;
     }
 
@@ -71,17 +57,20 @@ body {
       display: inline-block;
       width: 8px;
       height: 8px;
-      background: rgba(42, 84, 144, 0.8);
+      background: rgba(42, 84, 144, 0.6);
       border-radius: 50%;
-      border: solid 2px rgba(42, 84, 144, 0.8);
-      margin: 0;
+      border: none;
+      margin: 2px 0 0 0;
       padding: 0;
       color: transparent;
     }
 
     li.slick-active button {
-      background: rgba(255, 255, 255, 0.8);
-      border: solid 2px rgba(42, 84, 144, 0.8);
+      width: 12px;
+      height: 12px;
+      margin: 0;
+      background: transparent;
+      border: solid 2px rgba(42, 84, 144, 0.6);
     }
   }
 }
@@ -240,21 +229,21 @@ body {
       position: absolute;
       width: auto;
       margin: 0;
-      top: 550px;
+      top: 585px;
       left: 50%;
       transform: translate(-50%);
       padding: 0;
       overflow: hidden;
       z-index: 5;
       text-align: center;
-      height: 16px;
-      background: rgba(42, 84, 144, 0.6);
+      height: 20px;
+      background: rgba(42, 84, 144, 0.8);
       border-radius: 8px;
-      padding: 4px;
+      padding: 2px 4px;
 
       li {
         display: inline-block;
-        margin: 0 5px;
+        margin: 0 4px;
       }
 
       li button {
@@ -270,6 +259,9 @@ body {
       }
 
       li.slick-active button {
+        width: 9px;
+        height: 9px;
+        margin: 0;
         background: transparent;
         border: solid 1px rgba(255, 255, 255, 0.8);
       }
@@ -305,6 +297,7 @@ body {
   }
 
   .unit-homepage-hero__description {
+    margin-top: 20px;
     width: 100%;
     text-align: center;
     font-size: 14px;
