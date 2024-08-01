@@ -93,20 +93,20 @@ body {
   float: left;
   display: block;
   position: relative;
-  justify-content: top;
-  width: 285px;
+  width: 285px !important;
   height: 455px;
-  margin: 0;
+  margin: 0 10px;
+  padding: 0;
 }
 
 .unit-homepage-bestsellers__item {
-  float: left;
   display: block;
   position: relative;
   justify-content: top;
   width: 285px;
   height: 455px;
-  margin: 0 5px;
+  margin: 0 auto;
+  padding: 0;
   border-radius: 10px;
 }
 
@@ -402,7 +402,7 @@ body {
   }
 
   .unit-homepage-bestsellers__slide {
-    width: 240px;
+    width: 240px !important;
   }
 
   .unit-homepage-bestsellers__item {

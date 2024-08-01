@@ -3,14 +3,14 @@ $('.unit-homepage-brands__wrapper').slick({
     autoplay: false,
     arrows: false,
     dots: true,
-    centerMode: true,
+    centerMode: false,
     slidesToShow: 4,
     responsive: [
         {
             breakpoint: 992,
             settings: {
                 arrows: false,
-                centerMode: true,
+                centerMode: false,
                 centerPadding: '40px',
                 slidesToShow: 3
             }
@@ -19,7 +19,7 @@ $('.unit-homepage-brands__wrapper').slick({
             breakpoint: 768,
             settings: {
                 arrows: false,
-                centerMode: true,
+                centerMode: false,
                 centerPadding: '40px',
                 slidesToShow: 2
             }
@@ -28,7 +28,7 @@ $('.unit-homepage-brands__wrapper').slick({
             breakpoint: 480,
             settings: {
                 arrows: false,
-                centerMode: true,
+                centerMode: false,
                 centerPadding: '40px',
                 slidesToShow: 1
             }

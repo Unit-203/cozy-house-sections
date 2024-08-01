@@ -17,33 +17,33 @@ body {
   margin: 0 auto;
   background: rgba(255, 255, 255, 1);
   position: relative;
-  padding: 80px 0;
+  padding: 0;
   text-align: center;
   overflow: hidden;
 }
 
 .unit-homepage-brands__wrapper {
-  float: left;
   display: block;
   position: relative;
   width: 100%;
-  height: 352px;
-  margin: 0;
+  height: 152px;
+  margin: 100px 0;
   padding: 0;
+  overflow: hidden;
 
   .slick-dots {
     list-style-type: none;
     display: block;
-    position: relative;
+    position: absolute;
     width: calc(100% - 140px);
     height: 20px;
     margin: 0;
-    top: 50px;
+    top: 140px;
     left: 50%;
     transform: translate(-50%);
     padding: 0;
     overflow: hidden;
-    z-index: 5;
+    z-index: 15;
     text-align: center;
 
     li {
@@ -74,9 +74,19 @@ body {
   float: left;
   display: block;
   position: relative;
-  width: 310px;
+  width: 310px !important;
+  height: 152px;
+  margin: 0 10px;
+  padding: 0;
+}
+
+.unit-homepage-brands__item {
+  display: block;
+  position: relative;
+  width: 100%;
   height: 124px;
-  padding: 0 20px;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .unit-homepage-brands__picture {
@@ -120,26 +130,57 @@ body {
 
 @media only screen and (max-width: 768px) {
   .unit-homepage-brands__section {
-    padding: 40px 0 20px 0;
+    padding: 0;
     width: 100%;
+    height: 191px;
+  }
+
+  .unit-homepage-brands__wrapper {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 110px;
+    margin: 20px 0;
+    padding: 0;
+    overflow: hidden;
+  
+    .slick-dots {
+      top: 100px;
+    }
   }
 
   .unit-homepage-brands__slide {
-    width: 50%;
+    width: 350px !important;
+    height: 110px;
+  }
+
+  .unit-homepage-brands__item {
+    width: 100%;
     height: 92px;
+  }
+
+  .unit-homepage-brands__picture {
+    bottom: 0;
+    height: 43px;
   }
 
   .unit-homepage-brands__caption {
     font-size: 12px;
     line-height: 16px;
-    text-overflow: ellipsis ellipsis;
   }
 }
 
 @media only screen and (max-width: 480px) {
 
   .unit-homepage-brands__slide {
-    width: 100%;
+    width: 375px !important;
     height: 92px;
+    margin: 0;
   }
+
+  .unit-homepage-brands__picture {
+    bottom: 0;
+    height: 43px;
+  }
+
 }

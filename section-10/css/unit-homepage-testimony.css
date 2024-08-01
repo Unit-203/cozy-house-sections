@@ -92,18 +92,18 @@ body {
   float: left;
   display: block;
   position: relative;
-  width: 360px;
-  padding: 0 5px;
-  margin: 0;
+  width: 340px !important;
+  padding: 0;
+  margin: 0 10px;
 }
 
 .unit-homepage-testimony__item {
   float: left;
   display: block;
   position: relative;
-  width: 350px;
+  width: 340px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .unit-homepage-testimony__picture {
@@ -281,7 +281,7 @@ body {
   }
 
   .unit-homepage-testimony__slide {
-    width: 270px;
+    width: 260px !important;
     height: 385px;
   }
 
