@@ -12,8 +12,8 @@ $('.unit-homepage-brands__wrapper').slick({
             settings: {
                 arrows: false,
                 centerMode: false,
-                slidesToShow: 3,
-                slidesToScroll: 3
+                slidesToShow: 2,
+                slidesToScroll: 2
             }
         },
         {
