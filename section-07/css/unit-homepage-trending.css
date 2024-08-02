@@ -33,7 +33,6 @@ body {
 }
 
 .unit-homepage-trending__header {
-  float: left;
   position: relative;
   display: block;
   padding: 0 0 20px 70px;
@@ -79,23 +78,31 @@ body {
 }
 
 .unit-homepage-trending__wrapper {
-  float: left;
   display: block;
   position: relative;
   width: 100%;
-  height: 485px;
+  height: 455px;
   margin: 20px 0 0 0;
   padding: 0;
 
-  .slick-track {
-    margin-left: 100px;
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 20px;
+    padding: 0;
   }
 
+  .slick-track {
+    display: flex;
+    margin: 0;
+    margin-left: -40px !important;
+    padding: 0;
+  }
 }
 
 .unit-homepage-trending__slide {
-  float: left;
-  display: block;
+  display: inline-block;
   position: relative;
   width: 285px !important;
   height: 455px;
@@ -418,9 +425,6 @@ body {
   .unit-homepage-trending__wrapper {
     height: 405px;
 
-    .slick-track {
-      margin-left: 140px;
-    }
   }
 
   .unit-homepage-trending__slide {

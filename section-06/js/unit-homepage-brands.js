@@ -12,7 +12,6 @@ $('.unit-homepage-brands__wrapper').slick({
             settings: {
                 arrows: false,
                 centerMode: false,
-                centerPadding: '40px',
                 slidesToShow: 3,
                 slidesToScroll: 3
             }
@@ -22,7 +21,6 @@ $('.unit-homepage-brands__wrapper').slick({
             settings: {
                 arrows: false,
                 centerMode: false,
-                centerPadding: '40px',
                 slidesToShow: 1,
                 slidesToScroll: 1
             }

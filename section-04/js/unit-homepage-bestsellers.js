@@ -4,7 +4,6 @@ $('.unit-homepage-bestsellers__wrapper').slick({
     arrows: true,
     dots: false,
     centerMode: false,
-    centerPadding: '10px',
     slidesToShow: 4,
     prevArrow: '<span class="unit-homepage-bestsellers__prev"></span>',
     nextArrow: '<span class="unit-homepage-bestsellers__next"></span>',
@@ -14,7 +13,6 @@ $('.unit-homepage-bestsellers__wrapper').slick({
             settings: {
                 arrows: true,
                 centerMode: false,
-                centerPadding: 0,
                 slidesToShow: 3
             }
         },
@@ -23,7 +21,6 @@ $('.unit-homepage-bestsellers__wrapper').slick({
             settings: {
                 arrows: true,
                 centerMode: false,
-                centerPadding: 0,
                 slidesToShow: 2
             }
         },
@@ -32,7 +29,6 @@ $('.unit-homepage-bestsellers__wrapper').slick({
             settings: {
                 arrows: false,
                 centerMode: false,
-                centerPadding: 0,
                 slidesToShow: 1
             }
         }

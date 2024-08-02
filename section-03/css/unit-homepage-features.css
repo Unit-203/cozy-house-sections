@@ -152,6 +152,10 @@ body {
 
 @media only screen and (max-width: 992px) {
 
+  .unit-homepage-features__section {
+    padding: 0;
+  }
+
   .unit-homepage-features__picture {
     float: left;
     position: relative;

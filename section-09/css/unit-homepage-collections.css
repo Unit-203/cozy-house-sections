@@ -62,21 +62,35 @@ body {
   display: block;
   position: relative;
   width: 1320px;
-  height: 250px;
-  margin: 30px auto;
+  height: 280px;
+  margin: 30px auto 0 auto;
   padding: 0;
   overflow: hidden;
+
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 20px;
+    padding: 0;
+  }
+
+  .slick-track {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
 
   .slick-dots {
     list-style-type: none;
     display: block;
-    position: relative;
-    width: calc(100% - 140px);
+    position: absolute;
+    width: 375px;
     height: 20px;
     margin: 0;
-    top: 20px;
-    left: 50%;
-    transform: translate(-50%);
+    top: 260px;
+    right: 50%;
+
     padding: 0;
     overflow: hidden;
     z-index: 5;
@@ -107,14 +121,10 @@ body {
 }
 
 .unit-homepage-collections__slide {
-  float: left;
-  display: block;
+  display: inline-block;
   position: relative;
   width: 244px !important;
   height: 250px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
   padding: 0;
   margin: 0 10px;
 }
